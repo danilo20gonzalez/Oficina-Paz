@@ -1,1 +1,79 @@
 @import "tailwindcss";
+
+/* ///////////////////////// Animaciones personalizadas para el navbar */
+.animate-slide-in {
+  animation: slide-in 0.5s;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.5s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* /////////////////////// Animaciones personalizadas para el carrusel */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 1s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fade-in 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+/* ///////////////////////// Utilidades personalizadas para NewsGrid */
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Asegurar que las imágenes se carguen correctamente */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ///////////////////////// Estilos para el modo oscuro */
+/* Modo oscuro para v4 */
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Ejemplo de estilos con modo oscuro */
+.bg-custom {
+  background: white;
+}
+
+[data-theme="dark"] .bg-custom {
+  background: #1f2937;
+}
