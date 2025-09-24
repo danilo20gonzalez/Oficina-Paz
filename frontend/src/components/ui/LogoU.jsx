@@ -8,7 +8,7 @@ const HeaderWithImage = () => {
   
   return (
     <div className="relative z-20 flex justify-center">
-      <div className={`rounded-bl-lg rounded-br-lg shadow-lg max-w-3xl w-full mx-4 transition-all duration-500 ${isDarkMode ? "bg-gray-800" : "bg-white"}`}>
+      <div className={`rounded-bl-lg rounded-br-lg shadow-lg max-w-4xl w-full mx-4 transition-all duration-500 ${isDarkMode ? "bg-gray-800" : "bg-white"}`}>
         <img 
           src={isDarkMode ? logoIniWhite : logoIni}
           alt="Universidad de la Amazonia - Oficina de Paz" 
