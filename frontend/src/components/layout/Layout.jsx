@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-16"> {/* pt-16 para compensar navbar fijo */}
+      <main className="flex-grow pt-14"> {/* pt-16 para compensar navbar fijo */}
         {children}
       </main>
       <Footer /> 
